@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>用户手册管理</title>
+    <link href="/layui/css/layui.css?v=2.4.5" rel="stylesheet" />
+    <link href="/scripts/global.css" rel="stylesheet" />
+    <link href="/scripts/ztree/css/ztreestyle.css?v=3.5.19" rel="stylesheet" />
+</head>
+<body class="layui-layout-body">
+    <div class="layui-side layui-bg-gray">
+        <div class="hl-handle" style="width:100%;text-align:center;margin:10px 0;">
+            <a title="删除" class="layui-btn layui-btn-sm layui-btn-danger hl-del"><i class="layui-icon">&#xe640;</i></a>
+            <a title="修改" class="layui-btn layui-btn-sm layui-btn-normal hl-revise"><i class="layui-icon">&#xe642;</i></a>
+            <a title="添加" class="layui-btn layui-btn-sm hl-add"><i class="layui-icon">&#xe654;</i></a>
+        </div>
+        <ul id="hltree" class="ztree"></ul>
+    </div>
+    <div class="hl-header">
+        <span class="layui-breadcrumb hl-nav"></span>
+        <div class="hl-btn">
+            <a class="layui-btn hl-save" style="display:none">保存</a>
+            <a class="layui-btn layui-btn-normal hl-edit" style="display:none">编辑</a>
+        </div>
+    </div>
+    <div class="layui-body" style="top:52px;">
+        <div class="hl-parse" style="display:none"></div>
+        <script id="container" type="text/plain"></script>
+    </div>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/layui/layui.js?v=2.4.5"></script>
+    <script type="text/javascript" src="/scripts/ztree/js/jquery.ztree.core.min.js?v=3.5.38"></script>
+    <script type="text/javascript" src="/scripts/ztree/js/jquery.ztree.exedit.min.js?v=3.5.38"></script>
+    <script type="text/javascript" src="/scripts/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="/scripts/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="/scripts/ueditor/ueditor.parse.min.js"></script>
+    <script type="text/javascript" src="/scripts/admin.js"></script>
+</body>
+</html>
